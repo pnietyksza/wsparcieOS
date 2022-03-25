@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript")
+        
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Rejestracja
+    body
+        .register 
+            h1 Zarejestruj się
+            form(action='/register' method='post')
+                input#username(type='text' name='username' placeholder='Nazwa' required='')
+                input#password(type='password' name='password' placeholder='Hasło' required='')
+                input#email(type="email", name="email" placeholder='twojadres@mailowy.com' required='')
+                input#number(type="tel", name="phone" placeholder='Twój numer kontaktowy' pattern="[0-9]{3}[0-9]{3}[0-9]{3}")
+                label(for="instalator") Zaznacz jeśli jesteś instalatorem
+                input#instalator(type="checkbox", name="instalator")
+                input#nip(type="text", name="nip" placeholder='Podaj swój NIP' pattern="[0-9]{10}")
+                input(type='submit' value='Zarejestruj' )
+    script.
+        $('#instalator').change(function() {
+            console.log($(this).val())
+            $(this).next('input').toggle();
+        });

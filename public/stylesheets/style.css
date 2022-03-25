@@ -1,0 +1,441 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* login form */
+
+.login {
+  width: 400px;
+  background-color: #ffffff;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  margin: 100px auto;
+  border-radius: 15px;
+}
+.login h1 {
+  text-align: center;
+  color: #5b6574;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #dee0e4;
+}
+.login form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+.login form label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ff5a00;
+  color: #ffffff;
+}
+.login form input[type="password"], .login form input[type="text"] {
+  width: 310px;
+  height: 50px;
+  border: 1px solid #dee0e4;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.login form input[type="submit"] {
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #ff5a00;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+.login form input[type="submit"]:hover {
+  background-color: #ff5900b4;
+  transition: background-color 0.2s;
+}
+.login a {
+  text-decoration: none;
+  color: #ff5a00;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+/* end of login form */
+
+
+/* register form */
+
+.register{
+  width: 400px;
+  background-color: #ffffff;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  margin: 100px auto;
+  border-radius: 15px;
+}
+.register h1{
+  text-align: center;
+  color: #5b6574;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #dee0e4;
+}
+.register form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+.register input{
+  width: 310px;
+  height: 50px;
+  border: 1px solid #dee0e4;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.register form input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  background-color: #ff5a00;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.2s;
+  border-radius: 0 0 15px 15px;
+}
+.register form input[type="submit"]:hover {
+  background-color: #ff5900b4;
+    transition: background-color 0.2s;
+  }
+  .register form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-weight: 600;
+    color: #5b6574;
+    margin-bottom: 10px;
+  }
+  .register #nip{
+    display: none;
+  }
+  .register #instalator{
+    cursor: pointer;
+    background-color: #eee;
+    color: red;
+  }
+/* end of register form */
+
+/* content */
+
+
+
+.ticketyh2{
+  font-size: large;
+  text-decoration: none;
+  color: #000000;
+}
+.ticketyh2:hover{
+  text-decoration: underline;
+  color: #2868c7;
+}
+.yourTicketsBaner{
+  height: 85px;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.tickets label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #3274d6;
+  color: #ffffff;
+}
+.ticket{
+  background-color: #ffffff;
+  width: 80%;
+  height: 80px;
+  border-bottom: 1px solid rgb(216, 213, 213);
+  margin: auto;
+}
+
+.tickets{
+  min-height: 500px;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  border-radius: 15px;
+  height: auto;
+  width: 75%;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  padding-bottom: 50px;
+}
+.ticket:hover{
+  background-color: #f8f8f8;
+}
+
+.info ul,li{
+  list-style: none;
+  font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
+}
+.info{
+  float: left;
+  width: 80%;
+  height: 80px;
+
+}
+.button{
+  float: left;
+  width: 20%;
+  height: 80px;
+}
+.button a{
+  position: relative;
+  top: 40%;
+  left: 20%;
+  font-size: medium;
+  padding: 15px;
+  margin: auto;
+  text-decoration: none;
+}
+.button:hover{
+  text-decoration: underline;
+}
+
+/* end */
+
+
+/* finder bar */
+
+.finder{
+  padding-top: 50px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+#finderBar{
+  width: 40%;
+  height: 26px;
+  margin-right: 1px;
+  padding: 0 15px;
+  border: #ff5a00 2px solid;
+  border-radius: 15px 0 0 15px;
+}
+#finderBar:hover{
+  transition: background-color 0.2s;
+  border: #ff5900a2 2px solid;
+
+}
+#finderBar:focus{
+  transition: background-color 0.2s;
+  border: #ff59009a 2px solid;
+}
+#finderButton{
+  width: auto;
+  height: 30px;
+  background-color: #ff5a00;
+  border-radius: 0 15px 15px 0;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+
+
+
+
+
+/* end of finder bar */
+
+
+
+
+
+/* footer */
+
+.footer{
+  background-color: #ffffff;
+  padding: 0;
+  height: 270px;
+  width: 100%;
+  border-top: gray solid 2px;
+  border-bottom: #585858 solid 2px;
+  background-color: gray;
+}
+.footer ul{
+  float: left;
+  padding-left: 15%;
+  padding-top: 5%;
+}
+.footer li{
+  list-style-type: square;
+}
+.informationsAboutCompany li,ul{
+  list-style-type: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.newsletter{
+  padding: 15px;
+  text-align: center;
+  font-size: 1.1em;
+  color: white;
+  background-color: rgb(110, 109, 109);
+
+}
+.newsletter input{
+  border-radius: 2px;
+  width: 20em;
+  height: 1.5em;
+  border: 1px solid #dee0e4;
+}
+.actuallyInformations{
+  width: 100%;
+  height: auto;
+  background-color: #ff5a00 ;
+  letter-spacing: 0.1em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+}
+
+/* end footer */
+
+/* form ticket content */
+.informationsAboutNewTicket{
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  padding-top: 100px;
+
+}
+.informationsAboutNewTicket span{
+  font-size: 2em;
+
+}
+.addticketcontent{
+  padding-left: 150px ;
+  padding-right: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 380px;
+  background-color: #ffffff;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+.addticketcontent form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.addticketcontent form label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 50px;
+  background-color: #ff5a00;
+  color: #ffffff;
+}
+.addticketcontent form input[type='checkbox'] {
+  width: 50px;
+  height: 40px;
+  border: 1px solid #dee0e4;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.addticketcontent form input[type='text'] {
+  width: 310px;
+  height: 50px;
+  border: 1px solid #dee0e4;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.addticketcontent form input[type='list']{
+  width: 310px;
+  height: 50px;
+  border: 1px solid #dee0e4;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.addticketcontent form input[type="submit"] {
+  border-radius: 10px 10px 10px 10px;
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #ff5a00;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+.addticketcontent form input[type="submit"]:hover {
+  background-color: #ff5900b4;
+  transition: background-color 0.2s;
+}
+#opiszgloszenia{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#labelforopiszgloszenia{
+  width: 350px;
+}
+
+/* end of ticket content */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 725px) {
+  .tickets{
+    width: 100%;
+  }
+  .ticket{
+    width: 100%;
+  }
+  .button{
+    width: 30%;
+  }
+  .info{
+    width: 70%;
+  }
+
+}

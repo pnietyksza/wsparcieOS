@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Zaloguj
+  body 
+    .login
+      h1 Zaloguj się
+      form(action='/auth' method='post')
+        label(for='username')
+          // font awesome icon
+          i.fas.fa-user
+        input#username(type='text' name='username' placeholder='Nazwa' required='')
+        label(for='password')
+          i.fas.fa-lock
+        input#password(type='password' name='password' placeholder='Hasło' required='')
+        a(href="/register") Kliknij jeśli nie masz konta
+        input(type='submit' value='Login')
+
+
+
+

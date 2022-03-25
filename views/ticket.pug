@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+    head
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title WsparcieOS
+    body 
+        include menu.pug
+        .informationsAboutNewTicket
+            span Tutaj możesz dodać nowy ticket
+        .addticketcontent
+            form(action="addticket", method="post") 
+                input#technicznyproblem(type='checkbox' name='typproblemu' value='technicznyproblem')
+                label(for='technicznyproblem') Problem techniczny
+
+                input#obslugaproblem(type='checkbox' name='typproblemu' value='obslugaproblem')
+                label(for='obslugaproblem')  Problem z obsługą
+
+                input#tytulzgloszenia(type="text", name="tytulzgloszenia" placeholder='Tytuł twojego zgłoszenia' required='')
+
+                label#labelforopiszgloszenia(for='opiszgloszenia')  Poniżej dodaj opis, masz 250 znaków ;)
+                textarea#opiszgloszenia(placeholder="Describe yourself here..." name="opiszgloszenia", cols="44", rows="10") 
+
+                input#monitoring(type='checkbox' name='kategoria' value='monitoring')
+                label(for='monitoring')  Monitoring
+
+                input#wideodomofony(type='checkbox' name='kategoria' value='wideodomofony')
+                label(for='wideodomofony')  Wideodomofony
+
+                input#automatykaBram(type='checkbox' name='kategoria' value='automatykaBram')
+                label(for='automatykaBram')  Automatyka bramowa
+
+                input#automatykaBudynk(type='checkbox' name='kategoria' value='automatykaBudynk')
+                label(for='automatykaBudynk')  Automatyka budynkowa
+
+                input#producents(type="text", name="producenci" placeholder='Podaj producentów po przecinku')
+                input#models(type="text", name="modele" placeholder='Podaj modele produktów po przecinku')
+                input(type="submit", value="Dodaj ticket")
+                
+
+        include footer.pug
